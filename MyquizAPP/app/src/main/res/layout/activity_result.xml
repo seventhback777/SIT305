@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:gravity="center"
+    android:padding="32dp">
+
+    <TextView
+        android:id="@+id/tvCongrats"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Congratulations!"
+        android:textSize="26sp"
+        android:textStyle="bold"
+        android:textColor="?android:attr/textColorPrimary"
+        android:gravity="center"
+        android:layout_marginBottom="16dp"/>
+
+    <TextView
+        android:id="@+id/tvScore"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Your Score: 0/5"
+        android:textSize="22sp"
+        android:textColor="?android:attr/textColorPrimary"
+        android:layout_marginBottom="48dp"/>
+
+    <Button
+        android:id="@+id/btnNewQuiz"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Take New Quiz"
+        android:layout_marginBottom="12dp"/>
+
+    <Button
+        android:id="@+id/btnFinish"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Finish"/>
+
+    <Button
+        android:id="@+id/btnToggleTheme"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="🌙 Dark Mode"
+        android:layout_marginTop="32dp"/>
+
+</LinearLayout>
