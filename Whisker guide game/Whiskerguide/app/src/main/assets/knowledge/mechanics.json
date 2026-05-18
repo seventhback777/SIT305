@@ -1,0 +1,22 @@
+{
+  "entries": [
+    {
+      "id": "mechanic_combat",
+      "type": "mechanic",
+      "keywords": ["combat", "fight", "turn", "battle", "战斗"],
+      "content": "Combat is turn-based. The player acts first (Basic Attack, skill, or item), then the enemy counterattacks. After each turn, skill cooldowns drop by 1 and mana regenerates by 5."
+    },
+    {
+      "id": "mechanic_mana",
+      "type": "mechanic",
+      "keywords": ["mana", "magic", "mp", "法力"],
+      "content": "Mana is the resource for casting skills. Max is 50. Mana regenerates 5 per turn. Basic Attack costs no mana, but Fireball and other spells do."
+    },
+    {
+      "id": "mechanic_movement",
+      "type": "mechanic",
+      "keywords": ["move", "movement", "direction", "walk", "移动"],
+      "content": "Use the direction buttons to move one tile at a time on the map. Dark tiles are walls and cannot be crossed. The glowing tile is the exit."
+    }
+  ]
+}

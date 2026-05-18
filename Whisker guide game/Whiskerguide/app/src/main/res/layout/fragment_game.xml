@@ -1,0 +1,141 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#222222">
+
+    <com.example.whiskerguide.game.view.GameView
+        android:id="@+id/game_view"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintBottom_toTopOf="@id/status_bar"
+        app:layout_constraintHeight_percent="0.55" />
+
+    <LinearLayout
+        android:id="@+id/status_bar"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:padding="12dp"
+        android:background="#333333"
+        app:layout_constraintTop_toBottomOf="@id/game_view"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent">
+
+        <TextView
+            android:id="@+id/hp_label"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textColor="#FFFFFF"
+            android:text="HP 100/100" />
+
+        <ProgressBar
+            android:id="@+id/hp_bar"
+            style="?android:attr/progressBarStyleHorizontal"
+            android:layout_width="match_parent"
+            android:layout_height="12dp"
+            android:max="100"
+            android:progress="100"
+            android:progressTint="#E04848" />
+
+        <TextView
+            android:id="@+id/mp_label"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textColor="#FFFFFF"
+            android:layout_marginTop="6dp"
+            android:text="MP 50/50" />
+
+        <ProgressBar
+            android:id="@+id/mp_bar"
+            style="?android:attr/progressBarStyleHorizontal"
+            android:layout_width="match_parent"
+            android:layout_height="12dp"
+            android:max="50"
+            android:progress="50"
+            android:progressTint="#4882E0" />
+
+    </LinearLayout>
+
+    <GridLayout
+        android:id="@+id/dpad"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:columnCount="3"
+        android:rowCount="3"
+        android:layout_marginStart="16dp"
+        android:layout_marginBottom="16dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintStart_toStartOf="parent">
+
+        <Space android:layout_width="56dp" android:layout_height="56dp"
+            android:layout_row="0" android:layout_column="0"/>
+        <Button android:id="@+id/btn_up"
+            android:layout_width="56dp" android:layout_height="56dp"
+            android:layout_row="0" android:layout_column="1"
+            android:text="↑" android:textSize="20sp"/>
+        <Space android:layout_width="56dp" android:layout_height="56dp"
+            android:layout_row="0" android:layout_column="2"/>
+
+        <Button android:id="@+id/btn_left"
+            android:layout_width="56dp" android:layout_height="56dp"
+            android:layout_row="1" android:layout_column="0"
+            android:text="←" android:textSize="20sp"/>
+        <Space android:layout_width="56dp" android:layout_height="56dp"
+            android:layout_row="1" android:layout_column="1"/>
+        <Button android:id="@+id/btn_right"
+            android:layout_width="56dp" android:layout_height="56dp"
+            android:layout_row="1" android:layout_column="2"
+            android:text="→" android:textSize="20sp"/>
+
+        <Space android:layout_width="56dp" android:layout_height="56dp"
+            android:layout_row="2" android:layout_column="0"/>
+        <Button android:id="@+id/btn_down"
+            android:layout_width="56dp" android:layout_height="56dp"
+            android:layout_row="2" android:layout_column="1"
+            android:text="↓" android:textSize="20sp"/>
+        <Space android:layout_width="56dp" android:layout_height="56dp"
+            android:layout_row="2" android:layout_column="2"/>
+    </GridLayout>
+
+    <LinearLayout
+        android:id="@+id/combat_panel"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:visibility="gone"
+        android:layout_marginEnd="16dp"
+        android:layout_marginBottom="16dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent">
+
+        <Button android:id="@+id/btn_basic_attack"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Attack" />
+
+        <Button android:id="@+id/btn_fireball"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Fireball" />
+
+        <Button android:id="@+id/btn_potion"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Potion" />
+    </LinearLayout>
+
+    <Button
+        android:id="@+id/btn_ask_cat"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="🐱 Ask Cat"
+        android:layout_margin="12dp"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintEnd_toEndOf="parent" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>

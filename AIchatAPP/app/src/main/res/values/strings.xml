@@ -1,0 +1,10 @@
+<resources>
+    <string name="app_name">AIchatAPP</string>
+    <string name="login_subtitle">Enter your username to continue</string>
+    <string name="hint_username">Username</string>
+    <string name="btn_go">Go</string>
+    <string name="hint_message">Type a message…</string>
+    <string name="send">Send</string>
+    <string name="error_empty_username">Please enter a username</string>
+    <string name="error_db">Failed to save user. Please try again.</string>
+</resources>

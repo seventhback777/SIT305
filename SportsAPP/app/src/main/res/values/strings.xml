@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="app_name">Sports News</string>
+    <string name="article_image">Article image</string>
+    <string name="featured_match_image">Featured match image</string>
+    <string name="news_thumbnail">News thumbnail</string>
+</resources>

@@ -1,0 +1,70 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:gravity="center"
+    android:padding="32dp"
+    android:background="@color/colorBackground">
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Lost &amp; Found"
+        android:textSize="32sp"
+        android:textStyle="bold"
+        android:textColor="@color/colorPrimary"
+        android:layout_marginBottom="8dp" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Help your community find what's missing"
+        android:textSize="14sp"
+        android:textColor="#888888"
+        android:gravity="center"
+        android:layout_marginBottom="48dp" />
+
+    <Button
+        android:id="@+id/btn_report_lost"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="I Lost Something"
+        android:backgroundTint="@color/colorLost"
+        android:textColor="@android:color/white"
+        android:layout_marginBottom="16dp"
+        android:padding="16dp"
+        android:textSize="16sp" />
+
+    <Button
+        android:id="@+id/btn_report_found"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="I Found Something"
+        android:backgroundTint="@color/colorFound"
+        android:textColor="@android:color/white"
+        android:layout_marginBottom="32dp"
+        android:padding="16dp"
+        android:textSize="16sp" />
+
+    <Button
+        android:id="@+id/btn_view_all"
+        style="@style/Widget.MaterialComponents.Button.OutlinedButton"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="View All Posts"
+        android:padding="16dp"
+        android:textSize="16sp"
+        android:layout_marginBottom="16dp" />
+
+    <Button
+        android:id="@+id/btn_show_on_map"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="SHOW ON MAP"
+        android:backgroundTint="@color/colorPrimary"
+        android:textColor="@android:color/white"
+        android:padding="16dp"
+        android:textSize="16sp" />
+
+</LinearLayout>

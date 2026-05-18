@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <!-- Core theme colors -->
+    <color name="colorPrimary">#1A1A2E</color>
+    <color name="colorPrimaryVariant">#16213E</color>
+    <color name="colorSecondary">#0F3460</color>
+
+    <!-- Semantic colors used in layouts -->
+    <color name="background">#121212</color>
+    <color name="surface">#1E1E1E</color>
+    <color name="accent">#E94560</color>
+
+    <color name="text_primary">#EFEFEF</color>
+    <color name="text_secondary">#9E9E9E</color>
+    <color name="divider">#2C2C2C</color>
+
+    <!-- Bottom nav / chip state colors (used in selectors) -->
+    <color name="nav_active">#E94560</color>
+    <color name="nav_inactive">#666666</color>
+
+    <color name="chip_selected_bg">#E94560</color>
+    <color name="chip_unselected_bg">#2C2C2C</color>
+    <color name="chip_selected_text">#FFFFFF</color>
+    <color name="chip_unselected_text">#9E9E9E</color>
+
+    <!-- Sport category colours (used in drawables) -->
+    <color name="football_start">#1B5E20</color>
+    <color name="football_end">#4CAF50</color>
+    <color name="basketball_start">#E65100</color>
+    <color name="basketball_end">#FF9800</color>
+    <color name="cricket_start">#01579B</color>
+    <color name="cricket_end">#29B6F6</color>
+    <color name="tennis_start">#827717</color>
+    <color name="tennis_end">#CDDC39</color>
+</resources>

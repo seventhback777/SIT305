@@ -1,0 +1,16 @@
+{
+  "entries": [
+    {
+      "id": "skill_basic_attack",
+      "type": "skill",
+      "keywords": ["basic attack", "attack", "Basic Attack", "普攻"],
+      "content": "Basic Attack costs no mana and has no cooldown. You can use it every turn. Damage equals your Attack stat."
+    },
+    {
+      "id": "skill_fireball",
+      "type": "skill",
+      "keywords": ["fireball", "Fireball", "fire", "magic", "spell", "火球术"],
+      "content": "Fireball is a fire spell that costs 30 mana, deals 40 fire damage, and has a 2-turn cooldown. It is highly effective against Goblins and other fire-weak enemies."
+    }
+  ]
+}

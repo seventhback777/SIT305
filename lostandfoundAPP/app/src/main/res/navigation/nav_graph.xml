@@ -1,0 +1,67 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/nav_graph"
+    app:startDestination="@id/homeFragment">
+
+    <fragment
+        android:id="@+id/homeFragment"
+        android:name="com.example.lostandfoundapp.ui.HomeFragment"
+        android:label="Lost &amp; Found">
+        <action
+            android:id="@+id/action_home_to_create"
+            app:destination="@id/createPostFragment" />
+        <action
+            android:id="@+id/action_home_to_list"
+            app:destination="@id/listFragment" />
+        <action
+            android:id="@+id/action_home_to_map"
+            app:destination="@id/mapFragment" />
+    </fragment>
+
+    <fragment
+        android:id="@+id/mapFragment"
+        android:name="com.example.lostandfoundapp.ui.MapFragment"
+        android:label="Lost &amp; Found Map" />
+
+    <fragment
+        android:id="@+id/mapPickerFragment"
+        android:name="com.example.lostandfoundapp.ui.MapPickerFragment"
+        android:label="Pick Location" />
+
+    <fragment
+        android:id="@+id/createPostFragment"
+        android:name="com.example.lostandfoundapp.ui.CreatePostFragment"
+        android:label="Create Post">
+        <argument
+            android:name="postType"
+            app:argType="string" />
+        <action
+            android:id="@+id/action_create_to_list"
+            app:destination="@id/listFragment"
+            app:popUpTo="@id/homeFragment"
+            app:popUpToInclusive="false" />
+        <action
+            android:id="@+id/action_create_to_picker"
+            app:destination="@id/mapPickerFragment" />
+    </fragment>
+
+    <fragment
+        android:id="@+id/listFragment"
+        android:name="com.example.lostandfoundapp.ui.ListFragment"
+        android:label="All Posts">
+        <action
+            android:id="@+id/action_list_to_detail"
+            app:destination="@id/detailFragment" />
+    </fragment>
+
+    <fragment
+        android:id="@+id/detailFragment"
+        android:name="com.example.lostandfoundapp.ui.DetailFragment"
+        android:label="Post Detail">
+        <argument
+            android:name="postId"
+            app:argType="integer" />
+    </fragment>
+
+</navigation>

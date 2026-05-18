@@ -1,0 +1,10 @@
+{
+  "entries": [
+    {
+      "id": "enemy_goblin",
+      "type": "enemy",
+      "keywords": ["goblin", "Goblin", "forest monster", "enemy", "哥布林"],
+      "content": "The Goblin is the common enemy in the Dark Forest. HP 60, Attack 10. Best strategy: cast Fireball (40 fire damage — Goblins are weak to fire). Only use Basic Attack when Fireball is on cooldown."
+    }
+  ]
+}

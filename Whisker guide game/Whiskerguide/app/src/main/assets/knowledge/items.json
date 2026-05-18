@@ -1,0 +1,16 @@
+{
+  "entries": [
+    {
+      "id": "item_health_potion",
+      "type": "item",
+      "keywords": ["health potion", "potion", "heal", "Health Potion", "生命药水", "药水"],
+      "content": "Health Potion restores 30 HP instantly. Best used in combat when HP drops below half. You start with 2 potions in your inventory."
+    },
+    {
+      "id": "item_iron_sword",
+      "type": "item",
+      "keywords": ["iron sword", "sword", "weapon", "Iron Sword", "铁剑"],
+      "content": "Iron Sword is the starter weapon, granting +5 Attack when equipped. It powers your Basic Attack against all enemies."
+    }
+  ]
+}

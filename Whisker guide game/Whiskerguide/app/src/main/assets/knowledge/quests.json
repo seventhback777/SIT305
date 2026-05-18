@@ -1,0 +1,10 @@
+{
+  "entries": [
+    {
+      "id": "quest_forest_intro",
+      "type": "quest",
+      "keywords": ["quest", "goal", "Dark Forest", "objective", "任务"],
+      "content": "Current quest: cross the Dark Forest. Goal is to reach the glowing exit tile at the end of the map. Goblins block the path and must be defeated. Save mana for tough fights."
+    }
+  ]
+}

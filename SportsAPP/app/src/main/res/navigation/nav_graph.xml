@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/nav_graph"
+    app:startDestination="@id/homeFragment">
+
+    <fragment
+        android:id="@+id/homeFragment"
+        android:name="com.example.sportsapp.ui.HomeFragment"
+        android:label="Home">
+        <action
+            android:id="@+id/action_home_to_detail"
+            app:destination="@id/detailFragment"/>
+    </fragment>
+
+    <fragment
+        android:id="@+id/bookmarkFragment"
+        android:name="com.example.sportsapp.ui.BookmarkFragment"
+        android:label="Bookmarks">
+        <action
+            android:id="@+id/action_bookmark_to_detail"
+            app:destination="@id/detailFragment"/>
+    </fragment>
+
+    <fragment
+        android:id="@+id/detailFragment"
+        android:name="com.example.sportsapp.ui.DetailFragment"
+        android:label="Detail">
+        <argument
+            android:name="newsId"
+            app:argType="integer"
+            android:defaultValue="-1"/>
+    </fragment>
+
+</navigation>
